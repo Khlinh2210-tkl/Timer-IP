@@ -1,0 +1,84 @@
+# vsim -coverage -l reg_1hot_chk.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit reg_1hot_chk.ucdb; log -r /*;run -all" 
+# Start time: 20:36:44 on Jul 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ../tb/test_bench.v(28): (vopt-2685) [TFMPC] - Too few port connections for 'u_timer_top'.  Expected 13, found 12.
+# ** Warning: ../tb/test_bench.v(28): (vopt-2718) [TFMPC] - Missing connection for port 'tim_pstrb'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit reg_1hot_chk.ucdb
+#  log -r /*
+# run -all
+# Write data = 32'h00000802 at add : 12'h00
+# Write data = 32'hffffff00 at add : 12'h04
+# Write data = 32'hfffffffe at add : 12'h08
+# Write data = 32'h00000000 at add : 12'h0c
+# Write data = 32'h00000001 at add : 12'h10
+# Write data = 32'h00ffff00 at add : 12'h14
+# Write data = 32'hff0000ff at add : 12'h18
+# Write data = 32'h0f0f0f0f at add : 12'h1c
+# [INFO] RO check task
+# -----------------------------------------------
+# t=      1326 PASS: rdata = 32'h00000802 at addr 12'h00 is correct
+# ----------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=      1476 PASS: rdata = 32'hffffff00 at addr 12'h04 is correct
+# ----------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=      1626 PASS: rdata = 32'hfffffffe at addr 12'h08 is correct
+# ----------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=      1776 PASS: rdata = 32'h00000000 at addr 12'h0c is correct
+# ----------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=      1926 PASS: rdata = 32'h00000001 at addr 12'h10 is correct
+# ----------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=      2076 PASS: rdata = 32'h00000000 at addr 12'h14 is correct
+# ----------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=      2226 PASS: rdata = 32'h00000000 at addr 12'h18 is correct
+# ----------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=      2376 PASS: rdata = 32'h00000001 at addr 12'h1c is correct
+# ----------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h00000000 at addr: 12'h00
+# ---------------------------------------------------
+# t=      2676 PASS: rdata = 32'h00000000 at addr 12'h00 is correct
+# -----------------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=      2826 PASS: rdata = 32'hffffff00 at addr 12'h04 is correct
+# ----------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h00000000 at addr: 12'h04
+# ---------------------------------------------------
+# t=      3126 PASS: rdata = 32'h00000000 at addr 12'h04 is correct
+# -----------------------------------------------------
+# Test_result PASSED
+# ** Note: $finish    : ../tb/test_bench.v(61)
+#    Time: 3275 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 20:36:46 on Jul 10,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 2

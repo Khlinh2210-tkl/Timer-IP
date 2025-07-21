@@ -1,0 +1,288 @@
+# vsim -coverage -l reg_rw_chk.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit reg_rw_chk.ucdb; log -r /*;run -all" 
+# Start time: 20:36:55 on Jul 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ../tb/test_bench.v(28): (vopt-2685) [TFMPC] - Too few port connections for 'u_timer_top'.  Expected 13, found 12.
+# ** Warning: ../tb/test_bench.v(28): (vopt-2718) [TFMPC] - Missing connection for port 'tim_pstrb'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit reg_rw_chk.ucdb
+#  log -r /*
+# run -all
+# ==========================================================
+# ======== Case 2: Check RW access value ==========
+# =====================================================
+# =============== TCR value ================
+# [INFO] RW check task
+# Write data = 32'h00000000 at addr: 12'h00
+# ---------------------------------------------------
+# t=       326 PASS: rdata = 32'h00000000 at addr 12'h00 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'hffffffff at addr: 12'h00
+# ---------------------------------------------------
+# t=       626 PASS: rdata = 32'h00000003 at addr 12'h00 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h55555555 at addr: 12'h00
+# ---------------------------------------------------
+# t=       926 PASS: rdata = 32'h00000501 at addr 12'h00 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'haaaaaaaa at addr: 12'h00
+# ---------------------------------------------------
+# t=      1226 PASS: rdata = 32'h00000502 at addr 12'h00 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h5aa5a55a at addr: 12'h00
+# ---------------------------------------------------
+# t=      1526 PASS: rdata = 32'h00000502 at addr 12'h00 is correct
+# -----------------------------------------------------
+# =============== TDR0 value ================
+# [INFO] RW check task
+# Write data = 32'h00000000 at addr: 12'h04
+# ---------------------------------------------------
+# t=      1876 PASS: rdata = 32'h00000000 at addr 12'h04 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'hffffffff at addr: 12'h04
+# ---------------------------------------------------
+# t=      2176 PASS: rdata = 32'hffffffff at addr 12'h04 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h55555555 at addr: 12'h04
+# ---------------------------------------------------
+# t=      2476 PASS: rdata = 32'h55555555 at addr 12'h04 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'haaaaaaaa at addr: 12'h04
+# ---------------------------------------------------
+# t=      2776 PASS: rdata = 32'haaaaaaaa at addr 12'h04 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h5aa5a55a at addr: 12'h04
+# ---------------------------------------------------
+# t=      3076 PASS: rdata = 32'h5aa5a55a at addr 12'h04 is correct
+# -----------------------------------------------------
+# =============== TDR1 value ================
+# [INFO] RW check task
+# Write data = 32'h00000000 at addr: 12'h08
+# ---------------------------------------------------
+# t=      3376 PASS: rdata = 32'h00000000 at addr 12'h08 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'hffffffff at addr: 12'h08
+# ---------------------------------------------------
+# t=      3676 PASS: rdata = 32'hffffffff at addr 12'h08 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h55555555 at addr: 12'h08
+# ---------------------------------------------------
+# t=      3976 PASS: rdata = 32'h55555555 at addr 12'h08 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'haaaaaaaa at addr: 12'h08
+# ---------------------------------------------------
+# t=      4276 PASS: rdata = 32'haaaaaaaa at addr 12'h08 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h5aa5a55a at addr: 12'h08
+# ---------------------------------------------------
+# t=      4576 PASS: rdata = 32'h5aa5a55a at addr 12'h08 is correct
+# -----------------------------------------------------
+# =============== TCMP0 value ================
+# [INFO] RW check task
+# Write data = 32'h00000000 at addr: 12'h0c
+# ---------------------------------------------------
+# t=      4876 PASS: rdata = 32'h00000000 at addr 12'h0c is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'hffffffff at addr: 12'h0c
+# ---------------------------------------------------
+# t=      5176 PASS: rdata = 32'hffffffff at addr 12'h0c is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h55555555 at addr: 12'h0c
+# ---------------------------------------------------
+# t=      5476 PASS: rdata = 32'h55555555 at addr 12'h0c is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'haaaaaaaa at addr: 12'h0c
+# ---------------------------------------------------
+# t=      5776 PASS: rdata = 32'haaaaaaaa at addr 12'h0c is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h5aa5a55a at addr: 12'h0c
+# ---------------------------------------------------
+# t=      6076 PASS: rdata = 32'h5aa5a55a at addr 12'h0c is correct
+# -----------------------------------------------------
+# =============== TCMP1 value ================
+# [INFO] RW check task
+# Write data = 32'h00000000 at addr: 12'h10
+# ---------------------------------------------------
+# t=      6376 PASS: rdata = 32'h00000000 at addr 12'h10 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'hffffffff at addr: 12'h10
+# ---------------------------------------------------
+# t=      6676 PASS: rdata = 32'hffffffff at addr 12'h10 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h55555555 at addr: 12'h10
+# ---------------------------------------------------
+# t=      6976 PASS: rdata = 32'h55555555 at addr 12'h10 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'haaaaaaaa at addr: 12'h10
+# ---------------------------------------------------
+# t=      7276 PASS: rdata = 32'haaaaaaaa at addr 12'h10 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h5aa5a55a at addr: 12'h10
+# ---------------------------------------------------
+# t=      7576 PASS: rdata = 32'h5aa5a55a at addr 12'h10 is correct
+# -----------------------------------------------------
+# =============== TIER value ================
+# [INFO] RW check task
+# Write data = 32'h00000000 at addr: 12'h14
+# ---------------------------------------------------
+# t=      7876 PASS: rdata = 32'h00000000 at addr 12'h14 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'hffffffff at addr: 12'h14
+# ---------------------------------------------------
+# t=      8176 PASS: rdata = 32'h00000001 at addr 12'h14 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h55555555 at addr: 12'h14
+# ---------------------------------------------------
+# t=      8476 PASS: rdata = 32'h00000001 at addr 12'h14 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'haaaaaaaa at addr: 12'h14
+# ---------------------------------------------------
+# t=      8776 PASS: rdata = 32'h00000000 at addr 12'h14 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h5aa5a55a at addr: 12'h14
+# ---------------------------------------------------
+# t=      9076 PASS: rdata = 32'h00000000 at addr 12'h14 is correct
+# -----------------------------------------------------
+# ========== TISR value ===========
+# tisr = 1
+# [INFO] RW check task
+# Write data = 32'h00000001 at addr: 12'h18
+# ---------------------------------------------------
+# t=      9426 PASS: rdata = 32'h00000000 at addr 12'h18 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h00000000 at addr: 12'h18
+# ---------------------------------------------------
+# t=      9726 PASS: rdata = 32'h00000000 at addr 12'h18 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'hffffffff at addr: 12'h18
+# ---------------------------------------------------
+# t=     10026 PASS: rdata = 32'h00000000 at addr 12'h18 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h55555555 at addr: 12'h18
+# ---------------------------------------------------
+# t=     10326 PASS: rdata = 32'h00000000 at addr 12'h18 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'haaaaaaaa at addr: 12'h18
+# ---------------------------------------------------
+# t=     10626 PASS: rdata = 32'h00000000 at addr 12'h18 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h5aa5a55a at addr: 12'h18
+# ---------------------------------------------------
+# t=     10926 PASS: rdata = 32'h00000000 at addr 12'h18 is correct
+# -----------------------------------------------------
+# =============== THCSR value ================
+# [INFO] RW check task
+# Write data = 32'h00000000 at addr: 12'h1c
+# ---------------------------------------------------
+# t=     11226 PASS: rdata = 32'h00000000 at addr 12'h1c is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'hffffffff at addr: 12'h1c
+# ---------------------------------------------------
+# t=     11526 PASS: rdata = 32'h00000001 at addr 12'h1c is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h55555555 at addr: 12'h1c
+# ---------------------------------------------------
+# t=     11826 PASS: rdata = 32'h00000001 at addr 12'h1c is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'haaaaaaaa at addr: 12'h1c
+# ---------------------------------------------------
+# t=     12126 PASS: rdata = 32'h00000000 at addr 12'h1c is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h5aa5a55a at addr: 12'h1c
+# ---------------------------------------------------
+# t=     12426 PASS: rdata = 32'h00000000 at addr 12'h1c is correct
+# -----------------------------------------------------
+# =============== Reserved value ================
+# [INFO] RW check task
+# Write data = 32'hffffffff at addr: 12'h40001ffc
+# ---------------------------------------------------
+# t=     12726 PASS: rdata = 32'h00000000 at addr 12'hffc is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'hffffffff at addr: 12'h40000020
+# ---------------------------------------------------
+# t=     13026 PASS: rdata = 32'h00000000 at addr 12'h20 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'hffffffff at addr: 12'h03
+# ---------------------------------------------------
+# t=     13326 PASS: rdata = 32'h00000000 at addr 12'h03 is correct
+# -----------------------------------------------------
+# [INFO] RW check task
+# Write data = 32'h00000103 at addr: 12'h00
+# ---------------------------------------------------
+# t=     13626 PASS: rdata = 32'h00000103 at addr 12'h00 is correct
+# -----------------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=     13826 PASS: rdata = 32'h00000100 at addr 12'h00 is correct
+# ----------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=     13976 PASS: rdata = 32'h00000000 at addr 12'h04 is correct
+# ----------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=     14126 PASS: rdata = 32'h00000000 at addr 12'h08 is correct
+# ----------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=     14276 PASS: rdata = 32'hffffffff at addr 12'h0c is correct
+# ----------------------------------------------
+# [INFO] RO check task
+# -----------------------------------------------
+# t=     14426 PASS: rdata = 32'hffffffff at addr 12'h10 is correct
+# ----------------------------------------------
+# Test_result PASSED 
+# ** Note: $finish    : ../tb/test_bench.v(61)
+#    Time: 14575 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 20:36:59 on Jul 10,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 2

@@ -1,0 +1,73 @@
+# vsim -coverage -l reg_init_chk.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit reg_init_chk.ucdb; log -r /*;run -all" 
+# Start time: 20:36:48 on Jul 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ../tb/test_bench.v(28): (vopt-2685) [TFMPC] - Too few port connections for 'u_timer_top'.  Expected 13, found 12.
+# ** Warning: ../tb/test_bench.v(28): (vopt-2718) [TFMPC] - Missing connection for port 'tim_pstrb'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit reg_init_chk.ucdb
+#  log -r /*
+# run -all
+# ===================================
+# === Case 1 : check reset value === 
+# ===================================
+# ========== TCR value ===========
+# [INFO] RO check task
+# -----------------------------------------------
+# t=       176 PASS: rdata = 32'h00000100 at addr 12'h00 is correct
+# ----------------------------------------------
+# ========== TDR0 value ============
+# [INFO] RO check task
+# -----------------------------------------------
+# t=       326 PASS: rdata = 32'h00000000 at addr 12'h04 is correct
+# ----------------------------------------------
+# =========== TDR1 value ============
+# [INFO] RO check task
+# -----------------------------------------------
+# t=       476 PASS: rdata = 32'h00000000 at addr 12'h08 is correct
+# ----------------------------------------------
+# =========== TCMP0 value ============
+# [INFO] RO check task
+# -----------------------------------------------
+# t=       626 PASS: rdata = 32'hffffffff at addr 12'h0c is correct
+# ----------------------------------------------
+# =========== TCMP1 value ============
+# [INFO] RO check task
+# -----------------------------------------------
+# t=       776 PASS: rdata = 32'hffffffff at addr 12'h10 is correct
+# ----------------------------------------------
+# =========== TIER value ============
+# [INFO] RO check task
+# -----------------------------------------------
+# t=       926 PASS: rdata = 32'h00000000 at addr 12'h14 is correct
+# ----------------------------------------------
+# =========== TISR value ============
+# [INFO] RO check task
+# -----------------------------------------------
+# t=      1076 PASS: rdata = 32'h00000000 at addr 12'h18 is correct
+# ----------------------------------------------
+# =========== THCSR value ============
+# [INFO] RO check task
+# -----------------------------------------------
+# t=      1226 PASS: rdata = 32'h00000000 at addr 12'h1c is correct
+# ----------------------------------------------
+# Test_result PASSED
+# ** Note: $finish    : ../tb/test_bench.v(61)
+#    Time: 1375 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 20:36:51 on Jul 10,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 2
